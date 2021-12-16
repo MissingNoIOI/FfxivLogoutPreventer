@@ -1,0 +1,21 @@
+﻿<Application x:Class="FfxivLogoutPreventer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:FfxivLogoutPreventer"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/WPFUI;component/Styles/Theme/Dark.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/WPFUI;component/Styles/WPFUI.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <Style TargetType="{x:Type Window}" x:Key="BaseUi" BasedOn="{StaticResource UiWindow}">
+                <Setter Property="Height" Value="200" />
+                <Setter Property="MinHeight" Value="150" />
+                <Setter Property="Width" Value="300" />
+                <Setter Property="MinWidth" Value="300" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
